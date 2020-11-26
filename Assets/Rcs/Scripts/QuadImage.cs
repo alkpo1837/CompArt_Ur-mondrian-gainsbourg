@@ -31,6 +31,6 @@ public class QuadImage : MonoBehaviour
 
     public void SetTransitionColor(Color color)
     {
-        FillImage.DOColor(color, Random.value).SetEase(Ease.InOutSine);
+        FillImage.DOColor(color, Random.value / 2.0f).SetEase(Ease.InQuad);
     }
 }
